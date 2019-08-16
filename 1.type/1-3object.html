@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var foo ={
+           name:"foo",
+           major:"computer science"
+       }
+
+       console.log("foo.name : "+ foo.name)
+       console.log("foo[\"name\"] : " + foo["name"])
+
+       foo.major = "electronics engineering";
+       console.log("foo.major : "+foo.major);
+       console.log("foo[\"major\"] : " +foo["major"])
+
+       foo.age=30;
+       console.log("foo.age : "+foo.age)
+
+       foo["full-name"] = "foo bar";
+       console.log("foo[\"full-name\"]" + foo["full-name"]);
+       console.log("foo.full-name" + foo.full-name);
+       console.log("foo.full" + foo.full)
+    </script>
+</body>
+</html>

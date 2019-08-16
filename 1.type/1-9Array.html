@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var colorArr = ["orange","yelloow","blue","grren","red"]
+        console.log(colorArr[0])
+        console.log(colorArr[1])
+        console.log(colorArr[4])
+
+        console.log("\n\n");
+
+        var emptyArr = [];
+        console.log(emptyArr[0]);
+
+        emptyArr[0] = 100;
+        emptyArr[3] = "eight";
+        emptyArr[7] = true;
+        console.log(emptyArr);
+        console.log(emptyArr.length)
+
+        console.log("\n\n");
+
+        var arr = ['zero','one','two'];
+        console.log(arr.length);
+
+        arr.color="blue";
+        arr.name="number_array";
+        console.log(arr.length);
+        //배열의 가장 큰인덱스가 변했을시에만 length가 바뀐더ㅏ
+        arr[3]="red";
+        console.log(arr.length);
+        console.dir(arr)
+
+        console.log("\n\n");
+        for(var prop in arr){
+            console.log(prop, arr[prop])
+        }
+        for(var i = 0; i<arr.length;i++){
+            console.log(i,arr[i])
+        }
+
+        
+
+
+    </script>
+</body>
+</html>
