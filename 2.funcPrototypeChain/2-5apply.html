@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function add(a,b){
+        var k = [];
+        Array.prototype.push.apply(k,[a,b])
+        
+        return k;
+        }
+
+       console.log( add(2,3) )
+
+       
+       function Person(name,age,gender){
+         this.name=name;
+         this.age=age;
+         this.gender=gender;
+       }
+
+       var foo ={};
+       Person.apply(foo,['foo',30,'man'])
+       console.log(foo)
+
+
+       function myFunction(){
+         console.dir(arguments)
+         var args = Array.prototype.slice.apply(arguments)
+         console.dir(args)
+       }
+
+       myFunction(1,2,3)
+    </script>    
+</body>
+</html>

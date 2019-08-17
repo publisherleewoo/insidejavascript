@@ -91,6 +91,7 @@ bar()
   + constructor 프로퍼티
   + toString 메서드
   + apply(thisArg,ArgArray) 메서드
+    + apply 메서드를 호출하는 주체가 함수고 this를 특정 객체에 바인딩할뿐 결국 본질적인 기능은 함수호출이다.
   + call(thisArg,[,arg1[,arg2,]]) 메서드
   + bind(thisArg,[,arg1[,arg2,]]) 메서드
 
@@ -135,3 +136,9 @@ parent()
     inner()
 
 ```
+
+
+## 인스턴스와 객체 리터럴의 객체생성차이
++ 인스턴스는 재생성가능
++ 리터럴은 {} 고유한 객체만 생성
++ __proto__값이 다르다.  리터럴은 Object, 인스턴스는 함수이름
