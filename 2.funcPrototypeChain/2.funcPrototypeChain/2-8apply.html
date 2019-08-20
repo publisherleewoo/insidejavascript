@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function test(){
+        console.dir(arguments)
+        Array.prototype.push.apply(arguments,[1,2,3])
+        console.log(arguments)
+      }
+      test(3,4)
+
+      function Person(name,age,gender){
+        this.name=name;
+        this.age=age;
+        this.gender=gender;
+      }
+      var foo = {};
+      Person.apply(foo,['foo',30,'man'])
+      console.dir(foo)
+
+
+      function myFunction(){
+        console.log("유사배열인 arguments객체를 배열로 만들기")
+        console.dir(arguments);
+        var args = Array.prototype.slice.apply(arguments)
+        console.dir(args)
+      }
+      myFunction(1,2,3)
+    </script>    
+</body>
+</html>

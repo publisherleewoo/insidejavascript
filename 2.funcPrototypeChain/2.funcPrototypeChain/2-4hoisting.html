@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        add(2,3);  //아래 함수 선언문이 호이스팅이 일어나서 이 함수가 실행되는것, 호이스팅이 일어나는 이유는 변수 생성과 초기화가 분리되서 일어난다. 
+        function add(x,y){ 
+            return x+y;
+        }
+        add(3,4);
+    </script>    
+</body>
+</html>

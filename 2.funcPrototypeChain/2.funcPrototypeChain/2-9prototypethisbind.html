@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Person(name){
+            this.name = name;
+        }
+
+        Person.prototype.getName = function(){
+            return this.name;
+        }
+
+        var foo = new Person("foo");
+        console.log("this는 호출한 객체에 바인딩된다")
+        console.log(foo.getName())
+
+        Person.prototype.name="person";
+
+        console.log(Person.prototype.getName())
+    </script>
+</body>
+</html>

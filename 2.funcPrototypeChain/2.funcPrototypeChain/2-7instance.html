@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var Person = function(arg1){
+        this.name = arg1
+      }
+      console.dir(new Person("hi"))
+      console.dir(Person)
+      console.log("new Person('hi').__proto__ === Person.prototype : " , new Person("hi").__proto__ === Person.prototype)
+
+      var Person2 = function(arg1){
+        this.name = arg1
+        return "test"
+      }
+
+    </script>    
+</body>
+</html>
